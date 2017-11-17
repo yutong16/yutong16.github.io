@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[angular2学习笔记]]></title>
+    <url>%2F2017%2F09%2F27%2Fangular2%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[angular2学习笔记 1.Observable对象与Promise对象的区别2.angular2中，组件中调用服务提供的请求方法，默认是不会发出实际请求的，因为RxJS中的Observable实现的是冷模式，只有当该对象的方法被组件实例订阅–subscribe()后，才能发出请求。订阅后的Observable对象返回的是一个Subsciption实例3.路由跳转，代码跳转Router.navigateByUrl()和Router.navitate()的底层工作机制基本一致，都是通过Router.shceduleNavtgation()方法来实现跳转。不同的地方在于两个方法指定跳转的目标配置项的方式。Router.navigateByUrl()方法通过一个URL字符串或URLTree实例来指定。Router.navigate()方法与RouterLink类似，通过链接参数数组来指定（通过链接参数数组生成URLTree()实例）。除了这两个方法外，还支持extras参数定义跳转的具体行为]]></content>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[拦截输入属性]]></title>
+    <url>%2F2017%2F09%2F08%2Fangular2%E6%8B%A6%E6%88%AA%E8%BE%93%E5%85%A5%E5%B1%9E%E6%80%A7%2F</url>
+    <content type="text"><![CDATA[拦截输入属性父组件向子组件传递数据，是通过在父组件的属性绑定将数据流向子组件的。子组件可以拦截输入属性的数据并进行相应的处理。有两种方式可以拦截，一是setter拦截属性，而是ngOnChanges监听数据变化 setter拦截属性 getter和setter通常配套使用，用来对属性进行相关约束。 @Component({ selector:&apos;list-item&apos;, template:` &lt;div&gt; &lt;label class = &quot;contact-name&quot; &gt;{{contactObj.name}}&lt;/label&gt; &lt;/div&gt; ` }) export class ListComponent implements OnInit{ _contact:object={}; @Input() set contactObj(contact:object){ this._contact.name=(contact.name &amp;&amp; contact.name.trim() || &apos;no name set&apos;); } get contactObj(){ return this._contact} } ngOnChanges监听数据变化 ngOnChanges用于及时响应Angular在属性绑定中发生的数据变化，该方法接受一个对象参数，包含当前值和变化前的值。在ngOnInit之前，或者当数据绑定的输入属性的值发生变化时会触发。ngOnChanges是组件的生命周期钩子之一。 SimpleChanges类，是angualer的一个基础类，用于处理数据的前后变化，其中包含两个重要的成员变量，分别是previousValue和currentValue,previousValue是获取变化前的数据，而currentValue是获取变化后的数据。 ngOnChanges(changes:{[proKey:string]:SimpleChanges}){ let log:string=[]; for(let proName in changes){ let changeProp=changes[propName], from=JSON.stringify(changeProp.previousValue), to=JSON.stringify(changeProp.currentValue); log.push(`${propName} changed from ${from} to ${to}`) } }]]></content>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[如何在github page博客上绑定域名]]></title>
+    <url>%2F2017%2F09%2F08%2F%E5%A6%82%E4%BD%95%E5%9C%A8github-page%E5%8D%9A%E5%AE%A2%E4%B8%8A%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%2F</url>
+    <content type="text"><![CDATA[如何在github page博客上绑定域名 由于国内访问github速度较慢，搭建在github.io上的博客也不例外。当我们通过国内域名解析后访问github.io，速度相对来说还是可以接受的。 首先购买一个域名 在域名解析菜单下，绑定两个解析方法 a===&gt;github.io 解析的ip地址 CNAME===》yourname.github.io io地址 在本地博客文件中source文件夹下面新建一个CNAME文件，没有后缀名。之后发布到github上。]]></content>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery性能优化]]></title>
+    <url>%2F2017%2F09%2F07%2FjQuery%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%2F</url>
+    <content type="text"><![CDATA[jQuery性能优化 将常用的方法封装成jQuery插件]]></content>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2017%2F09%2F06%2Fbug%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[bug笔记 Ajax请求错误： ajax status canceled]]></content>
+  </entry>
+</search>
