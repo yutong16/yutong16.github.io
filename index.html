@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -101,6 +101,7 @@
 <meta property="og:url" content="http://overfuns.cn/index.html">
 <meta property="og:site_name" content="只是笔记">
 <meta property="og:description" content="学习笔记，心情日记，生活趣事">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="只是笔记">
 <meta name="twitter:description" content="学习笔记，心情日记，生活趣事">
@@ -119,7 +120,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
     duoshuo: {
       userId: '0',
-      author: 'Author'
+      author: '博主'
     },
     algolia: {
       applicationID: '',
@@ -161,7 +162,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -208,19 +209,9 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-主页"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-关于"></i> <br />
-            
-            Über
+            首页
           </a>
         </li>
       
@@ -228,9 +219,29 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-标签"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Tags
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -243,7 +254,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
-            Suche
+            搜索
           </a>
         </li>
       
@@ -263,7 +274,7 @@
     </span>
     <div class="local-search-input-wrapper">
       <input autocomplete="off"
-             placeholder="Searching..." spellcheck="false"
+             placeholder="搜索..." spellcheck="false"
              type="text" id="local-search-input">
     </div>
   </div>
@@ -330,9 +341,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-27T09:55:46+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-27T09:55:46+08:00">
                 2017-09-27
               </time>
             
@@ -372,13 +383,17 @@
       
         
           
-            <h3 id="angular2学习笔记"><a href="#angular2学习笔记" class="headerlink" title="angular2学习笔记"></a>angular2学习笔记</h3><blockquote>
-<blockquote>
-<p>1.Observable对象与Promise对象的区别<br>2.angular2中，组件中调用服务提供的请求方法，默认是不会发出实际请求的，因为RxJS中的Observable实现的是冷模式，只有当该对象的方法被组件实例订阅–subscribe()后，才能发出请求。订阅后的Observable对象返回的是一个Subsciption实例<br>3.路由跳转，代码跳转Router.navigateByUrl()和Router.navitate()的底层工作机制基本一致，都是通过Router.shceduleNavtgation()方法来实现跳转。<br>不同的地方在于两个方法指定跳转的目标配置项的方式。Router.navigateByUrl()方法通过一个URL字符串或URLTree实例来指定。<br>Router.navigate()方法与RouterLink类似，通过链接参数数组来指定（通过链接参数数组生成URLTree()实例）。<br>除了这两个方法外，还支持extras参数定义跳转的具体行为</p>
-</blockquote>
-</blockquote>
+          angular2学习笔记
 
-          
+1.Observable对象与Promise对象的区别2.angular2中，组件中调用服务提供的请求方法，默认是不会发出实际请求的，因为RxJS中的Observable实现的是冷模式，只有当该对象的方法被组件实例订阅–subscribe()后，才能发出请求。订阅后的Observable对象返回的是一个Subsciption实例3.路由跳转，代码跳转Router.navigateByUrl()和Router.navitate()的底层工作机制基本一致，都是通过Rout
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/27/angular2笔记/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -454,9 +469,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-08T14:55:46+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-08T14:55:46+08:00">
                 2017-09-08
               </time>
             
@@ -500,7 +515,7 @@
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/09/08/angular2拦截输入属性/#more" rel="contents">
-              Weiterlesen &raquo;
+              阅读全文 &raquo;
             </a>
           </div>
           <!--/noindex-->
@@ -579,9 +594,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-08T09:55:46+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-08T09:55:46+08:00">
                 2017-09-08
               </time>
             
@@ -621,18 +636,25 @@
       
         
           
-            <h3 id="如何在github-page博客上绑定域名"><a href="#如何在github-page博客上绑定域名" class="headerlink" title="如何在github page博客上绑定域名"></a>如何在github page博客上绑定域名</h3><blockquote>
-<blockquote>
-<p>由于国内访问github速度较慢，搭建在github.io上的博客也不例外。当我们通过国内域名解析后访问github.io，速度相对来说还是可以接受的。</p>
-<ol>
-<li>首先购买一个域名</li>
-<li>在域名解析菜单下，绑定两个解析方法<br>  a===&gt;github.io  解析的ip地址<br>  CNAME===》yourname.github.io io地址</li>
-<li>在本地博客文件中source文件夹下面新建一个CNAME文件，没有后缀名。之后发布到github上。</li>
-</ol>
-</blockquote>
-</blockquote>
+          如何在github page博客上绑定域名
+
+由于国内访问github速度较慢，搭建在github.io上的博客也不例外。当我们通过国内域名解析后访问github.io，速度相对来说还是可以接受的。
+
+首先购买一个域名
+在域名解析菜单下，绑定两个解析方法  a===&gt;github.io  解析的ip地址  CNAME===》yourname.github.io io地址
+在本地博客文件中source文件夹下面新建一个CNAME文件，没有后缀名。之后发布到github上。
+
+
+
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/08/如何在github-page博客上绑定域名/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -708,9 +730,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-07T14:35:07+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-07T14:35:07+08:00">
                 2017-09-07
               </time>
             
@@ -750,13 +772,20 @@
       
         
           
-            <h3 id="jQuery性能优化"><a href="#jQuery性能优化" class="headerlink" title="jQuery性能优化"></a>jQuery性能优化</h3><blockquote>
-<ol>
-<li>将常用的方法封装成jQuery插件 </li>
-</ol>
-</blockquote>
+          jQuery性能优化
+
+将常用的方法封装成jQuery插件 
+
+
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/07/jQuery性能优化/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -822,7 +851,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/09/06/bug笔记/" itemprop="url">Unbenannt</a></h1>
+                <a class="post-title-link" href="/2017/09/06/bug笔记/" itemprop="url">未命名</a></h1>
         
 
         <div class="post-meta">
@@ -832,9 +861,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-06T13:40:22+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-06T13:40:22+08:00">
                 2017-09-06
               </time>
             
@@ -874,14 +903,21 @@
       
         
           
-            <h2 id="bug笔记"><a href="#bug笔记" class="headerlink" title="bug笔记"></a>bug笔记</h2><ol>
-<li><blockquote>
-<p>Ajax请求错误：<br> <code>ajax status canceled</code><br> <code></code></p>
-</blockquote>
-</li>
-</ol>
+          bug笔记
+
+Ajax请求错误： ajax status canceled 
+
+
+
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/06/bug笔记/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -958,10 +994,10 @@
           
             <div class="site-state-item site-state-posts">
             
-              <a href="/archives">
+              <a href="/archives/">
             
                 <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">Artikel</span>
+                <span class="site-state-item-name">日志</span>
               </a>
             </div>
           
@@ -974,7 +1010,7 @@
             <div class="site-state-item site-state-tags">
               
                 <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">Tags</span>
+                <span class="site-state-item-name">标签</span>
               
             </div>
           
@@ -1039,7 +1075,7 @@
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <span class="theme-link" href="#">Hexo</span></div>
+  <div class="powered-by">由 <span class="theme-link" href="#">Hexo</span> 强力驱动</div>
 
   <span class="post-meta-divider"></span>
 
