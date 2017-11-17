@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="">
+<html class="theme-next pisces use-motion" lang="">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -79,7 +79,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Hexo, NexT, 技术笔记, 生活日记, 前端, web" />
 
 
 
@@ -98,15 +98,15 @@
 <meta name="description" content=".article-title {        font-size: 2.1em;    }    strong a {        color: #747474;    }    .share {        display: none;    }    .player {        margin-left: -10px;    }    .sign {        text-">
 <meta property="og:type" content="website">
 <meta property="og:title" content="404 Not Found：该页无法显示">
-<meta property="og:url" content="http://yoursite.com/404.html">
+<meta property="og:url" content="http://overfuns.cn/404.html">
 <meta property="og:site_name" content="只是笔记">
 <meta property="og:description" content=".article-title {        font-size: 2.1em;    }    strong a {        color: #747474;    }    .share {        display: none;    }    .player {        margin-left: -10px;    }    .sign {        text-">
-<meta property="og:image" content="http://yoursite.com/resources/Mihawk-Wind.gif">
+<meta property="og:image" content="http://overfuns.cn/resources/Mihawk-Wind.gif">
 <meta property="og:updated_time" content="2017-09-07T07:18:21.560Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="404 Not Found：该页无法显示">
 <meta name="twitter:description" content=".article-title {        font-size: 2.1em;    }    strong a {        color: #747474;    }    .share {        display: none;    }    .player {        margin-left: -10px;    }    .sign {        text-">
-<meta name="twitter:image" content="http://yoursite.com/resources/Mihawk-Wind.gif">
+<meta name="twitter:image" content="http://overfuns.cn/resources/Mihawk-Wind.gif">
 
 
 
@@ -114,7 +114,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     version: '5.1.2',
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -136,7 +136,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/404.html"/>
+  <link rel="canonical" href="http://overfuns.cn/404.html"/>
 
 
 
@@ -200,9 +200,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-主页"></i> <br />
             
             Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-关于"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-标签"></i> <br />
+            
+            Tags
           </a>
         </li>
       
@@ -321,7 +341,7 @@
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
             <p class="site-author-name" itemprop="name">yutong16</p>
-            <p class="site-description motion-element" itemprop="description">个人热爱学习笔记，心情日记，生活趣事</p>
+            <p class="site-description motion-element" itemprop="description">学习笔记，心情日记，生活趣事</p>
         </div>
 
         <nav class="site-state motion-element">
@@ -356,6 +376,20 @@
 
         <div class="links-of-author motion-element">
           
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/yutong16" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i></a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="mailto:494572656@qq.com" target="_blank" title="E-Mail">
+                  
+                    <i class="fa fa-fw fa-envelope"></i></a>
+              </span>
+            
+          
         </div>
 
         
@@ -385,7 +419,7 @@
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
+  &copy;  2015 &mdash; 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
@@ -400,7 +434,7 @@
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.2</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.2</div>
 
 
         
@@ -443,6 +477,8 @@
   
 
 
+  
+
 
 
 
@@ -471,6 +507,9 @@
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
 
   
 
@@ -483,6 +522,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
 
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
