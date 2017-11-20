@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[angular2学习笔记]]></title>
-    <url>%2F2017%2F09%2F27%2Fangular2%E7%AC%94%E8%AE%B0%2F</url>
-    <content type="text"><![CDATA[angular2学习笔记 1.Observable对象与Promise对象的区别2.angular2中，组件中调用服务提供的请求方法，默认是不会发出实际请求的，因为RxJS中的Observable实现的是冷模式，只有当该对象的方法被组件实例订阅–subscribe()后，才能发出请求。订阅后的Observable对象返回的是一个Subsciption实例3.路由跳转，代码跳转Router.navigateByUrl()和Router.navitate()的底层工作机制基本一致，都是通过Router.shceduleNavtgation()方法来实现跳转。不同的地方在于两个方法指定跳转的目标配置项的方式。Router.navigateByUrl()方法通过一个URL字符串或URLTree实例来指定。Router.navigate()方法与RouterLink类似，通过链接参数数组来指定（通过链接参数数组生成URLTree()实例）。除了这两个方法外，还支持extras参数定义跳转的具体行为]]></content>
+    <title><![CDATA[利用Hexo+Github搭建个人博客]]></title>
+    <url>%2F2017%2F11%2F20%2F%E5%88%A9%E7%94%A8Hexo-Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[利用Hexo+Github搭建个人博客 在这个百家争鸣的开放时代下，每个人都在各自的领域发光发热，作为一个每天早起晚归的板砖工，有一个记录自己板砖历程的记事本 技术博客 也是进入高级包工头的必备条件。所以在这里进行一下回顾一下博客搭建的过程。 本次搭建博客需要以下各类资源：一个github账户，还有~好心情!!! 下面进行搭建过程： 1.安装本地环境 nodeJS 在官网下载nodeJS对应的安装包后，点击按装包以管理员身份运行无脑下一步即可，安装完成后使用cmd命令打开控制台，输入node -v查看是否正确安装node服务，输入npm -v，查看是否已正确安装npm包管理器。本人成功截图如下：本人安装版本较早，现版本号可能会有所不同，但是没有影响。若出现其他情况，请重新安装nodeJS,或查阅相关资料进行处理。2.安装Hexo 运行npm install hexo -g,在全局模式下安装hexo模块（默认最新版本），安装成功后运行hexo，cli中回下hexo相关指令,如下,更多hexo相关信息请访问Hexo API。我们运行hexo init &lt;your blog&#39;s name&gt;初始化一个Hexo框架的简易博客，这样一个简易博客就搭建完成了。接下来进入博客文件夹，运行hexo s，框架部署成功后，如下：,在本地浏览器中输入http://localhost:4000即可访问到本地部署的博客。3.将Hexo博客发布到github上 上面成功后，我们登录github，并创建一个仓库,仓库名必须未your_name.github.io格式。这个github page的固定写法。 建立完成后，拷贝仓库的连接,打开本地博客文件目录，编辑博客配置文件_config.yml,,将配置文件的deploy属性改为如下，注意:后面有一个空格。完成后，我们关联了github,但是还的需要hexo中相应的模块将代码发布到github上，所以接着运行npm install hexo-deployer-git --save，安装完成后。设置连接github的账户，邮箱。。接下来运行hexo d -g，也可以先运行hexo g，再运行hexo d。该命令含义是先生成静态文件，再发布到github上。在发布过程中，github会验证ssh密码，如果已经设置改密码，则会自动跳过。 发布成功后,即可访问该web站。4.修改Hexo主题 Hexo最大的优势莫过于拥有丰富的主题风格，以及强大的社区论坛。在主题这块，个人比较倾向于Next主题风格，还有其他很多好看的主题。 这里我们进行一下主题的修改设置： 1. 确定主题，运行npm install --save &lt;主题名称&gt;; 2. 修改博客配置文件_config.yml中的theme属性，设置为主题名称; 3. 运行hexo d -g，查看线上页面;5.Hexo相关常用命令 1. 新建分类，hexo new page &#39;名称&#39;; 2. 新建博客，hexo new &#39;名称&#39;; 更多命令请学习hexo官方文档!]]></content>
       <categories>
-        <category>前端框架</category>
+        <category>技术博客</category>
       </categories>
       <tags>
-        <tag>Angular2.0</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -42,6 +42,17 @@
       </categories>
       <tags>
         <tag>Jquery</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[angular2学习笔记]]></title>
+    <url>%2F2017%2F07%2F27%2Fangular2%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[angular2学习笔记 1.Observable对象与Promise对象的区别2.angular2中，组件中调用服务提供的请求方法，默认是不会发出实际请求的，因为RxJS中的Observable实现的是冷模式，只有当该对象的方法被组件实例订阅–subscribe()后，才能发出请求。订阅后的Observable对象返回的是一个Subsciption实例3.路由跳转，代码跳转Router.navigateByUrl()和Router.navitate()的底层工作机制基本一致，都是通过Router.shceduleNavtgation()方法来实现跳转。不同的地方在于两个方法指定跳转的目标配置项的方式。Router.navigateByUrl()方法通过一个URL字符串或URLTree实例来指定。Router.navigate()方法与RouterLink类似，通过链接参数数组来指定（通过链接参数数组生成URLTree()实例）。除了这两个方法外，还支持extras参数定义跳转的具体行为]]></content>
+      <categories>
+        <category>前端框架</category>
+      </categories>
+      <tags>
+        <tag>Angular2.0</tag>
       </tags>
   </entry>
 </search>
