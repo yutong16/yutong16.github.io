@@ -79,7 +79,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Jquery," />
+  <meta name="keywords" content="传输协议," />
 
 
 
@@ -95,18 +95,18 @@
 
 
 
-<meta name="description" content="jQuery性能优化  将常用的方法封装成jQuery插件">
-<meta name="keywords" content="Jquery">
+<meta name="description" content="websocket使用说明　　在一般的网络请求中，如HTTP协议，只能有前端发出请求后，后端根据协议的握手验证后，才能返回数据到前端。这样的数据传输方式，在有大量的HTTP请求时，会导致阻塞，例如在HTTP 1.1协议中，chrome就只能同事并发8条请求 。这个问题在HTTP 2.0中已解决　　websocket是HTML5中一个可以在TCP连接上进行全双工通讯的协议。在WebSocket AP">
+<meta name="keywords" content="传输协议">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jQuery性能优化">
-<meta property="og:url" content="http://overfuns.cn/2017/09/07/jQuery性能优化/index.html">
+<meta property="og:title" content="websocket说明">
+<meta property="og:url" content="http://overfuns.cn/2017/12/01/websocket说明/index.html">
 <meta property="og:site_name" content="只是笔记">
-<meta property="og:description" content="jQuery性能优化  将常用的方法封装成jQuery插件">
+<meta property="og:description" content="websocket使用说明　　在一般的网络请求中，如HTTP协议，只能有前端发出请求后，后端根据协议的握手验证后，才能返回数据到前端。这样的数据传输方式，在有大量的HTTP请求时，会导致阻塞，例如在HTTP 1.1协议中，chrome就只能同事并发8条请求 。这个问题在HTTP 2.0中已解决　　websocket是HTML5中一个可以在TCP连接上进行全双工通讯的协议。在WebSocket AP">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-23T01:30:46.138Z">
+<meta property="og:updated_time" content="2017-12-01T08:00:41.121Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jQuery性能优化">
-<meta name="twitter:description" content="jQuery性能优化  将常用的方法封装成jQuery插件">
+<meta name="twitter:title" content="websocket说明">
+<meta name="twitter:description" content="websocket使用说明　　在一般的网络请求中，如HTTP协议，只能有前端发出请求后，后端根据协议的握手验证后，才能返回数据到前端。这样的数据传输方式，在有大量的HTTP请求时，会导致阻塞，例如在HTTP 1.1协议中，chrome就只能同事并发8条请求 。这个问题在HTTP 2.0中已解决　　websocket是HTML5中一个可以在TCP连接上进行全双工通讯的协议。在WebSocket AP">
 
 
 
@@ -136,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://overfuns.cn/2017/09/07/jQuery性能优化/"/>
+  <link rel="canonical" href="http://overfuns.cn/2017/12/01/websocket说明/"/>
 
 
 
 
 
-  <title>jQuery性能优化 | 只是笔记</title>
+  <title>websocket说明 | 只是笔记</title>
   
 
 
@@ -323,7 +323,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://overfuns.cn/2017/09/07/jQuery性能优化/">
+    <link itemprop="mainEntityOfPage" href="http://overfuns.cn/2017/12/01/websocket说明/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="yutong16">
@@ -340,7 +340,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">jQuery性能优化</h1>
+          <h1 class="post-title" itemprop="name headline">websocket说明</h1>
         
 
         <div class="post-meta">
@@ -352,8 +352,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-07T14:35:07+08:00">
-                2017-09-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-01T14:20:59+08:00">
+                2017-12-01
               </time>
             
 
@@ -375,8 +375,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/性能优化/" itemprop="url" rel="index">
-                    <span itemprop="name">性能优化</span>
+                  <a href="/categories/技术博客/" itemprop="url" rel="index">
+                    <span itemprop="name">技术博客</span>
                   </a>
                 </span>
 
@@ -412,11 +412,29 @@
       
 
       
-        <h3 id="jQuery性能优化"><a href="#jQuery性能优化" class="headerlink" title="jQuery性能优化"></a>jQuery性能优化</h3><blockquote>
-<ol>
-<li>将常用的方法封装成jQuery插件 </li>
-</ol>
+        <h3 id="websocket使用说明"><a href="#websocket使用说明" class="headerlink" title="websocket使用说明"></a>websocket使用说明</h3><p>　　在一般的网络请求中，如HTTP协议，只能有前端发出请求后，后端根据协议的握手验证后，才能返回数据到前端。这样的数据传输方式，在有大量的HTTP请求时，会导致阻塞，例如在HTTP 1.1协议中，chrome就只能同事并发8条请求 。<strong>这个问题在HTTP 2.0中已解决</strong><br>　　websocket是HTML5中一个可以在TCP连接上进行全双工通讯的协议。在WebSocket API中，只需要进行一个握手的操作后，浏览器和服务器之间就生成了一个专属的快速通道，两者之间可以互传数据。<br>　　WebSocket对象通过<code>send()</code>方法来向服务器发送数据，并通过<code>onmessage</code>事件来接受服务器返回的数据。<br>　　一般通过下面<code>new WebSocket()</code>的方式创建WebSocket对象：</p>
+<blockquote>
+<p><code>var Socket = new WebSocket( url, [protocol] );</code>  </p>
 </blockquote>
+<p>　　其中可以传两个参数，<code>url</code>是必传的参数，代表服务器的指定地址，<code>protocol</code>是可选参数，表示可接受的协议名。  </p>
+<p>　　WebSocket对象拥有的属性如下：</p>
+<ol>
+<li>Socket.readyState : 拥有4中连接状态，0-表示连接尚未建立；1-表示连接已建立，可以进行通信；2-表示连接正在关闭；3-表示连接已经关闭或者连接不能打开。</li>
+<li>Socket.bufferedAmount : 只读属性bufferedAmount已被send()放入正在队列中等待传输，但是还没有发出UTF-8文本字节数。  </li>
+</ol>
+<p>　　WebSocket对象的事件如下：</p>
+<ol>
+<li>open: 事件处理程序-Socket.onopen,在连接时触发；</li>
+<li>message: 事件处理程序-Socket.onmessage,客户端接受服务器数据时触发；</li>
+<li>error: 事件处理程序-Socket.onerror,通信发生错误时触发</li>
+<li>close: 事件处理程序-Socket.onclose,连接关闭时触发  </li>
+</ol>
+<p>　　WebSocket方法如下：</p>
+<ol>
+<li>WebSocket.send():使用连接发送数据；</li>
+<li>WebSocket.close():关闭连接；  </li>
+</ol>
+<p>为了建立一个WebSocket连接，客户端浏览器首先要向服务器发起一个HTTP请求，这个请求和通常的HTTP请求不同，包含了一些附加头信息，其中附加头信息<code>Upgrade:WebSocket</code>表明这是一个申请协议升级的HTTP请求，服务器端解析这些附加的头信息然后产生应答信息返回给客户端，客户端和服务器之间的WebSocket连接就建立起来了，双方可以互相传数据，并且这个连接持续到知道客户端或服务器的某一方主动关闭连接。</p>
 
       
     </div>
@@ -434,7 +452,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Jquery/" rel="tag"># Jquery</a>
+            <a href="/tags/传输协议/" rel="tag"># 传输协议</a>
           
         </div>
       
@@ -447,8 +465,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/07/27/angular2笔记/" rel="next" title="angular2学习笔记">
-                <i class="fa fa-chevron-left"></i> angular2学习笔记
+              <a href="/2017/11/22/DOM级别回顾/" rel="next" title="DOM级别回顾">
+                <i class="fa fa-chevron-left"></i> DOM级别回顾
               </a>
             
           </div>
@@ -456,10 +474,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/09/08/如何在github-page博客上绑定域名/" rel="prev" title="如何在github page博客上绑定域名">
-                如何在github page博客上绑定域名 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -606,7 +620,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery性能优化"><span class="nav-number">1.</span> <span class="nav-text">jQuery性能优化</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#websocket使用说明"><span class="nav-number">1.</span> <span class="nav-text">websocket使用说明</span></a></li></ol></div>
             
 
           </div>

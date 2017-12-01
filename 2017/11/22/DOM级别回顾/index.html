@@ -79,7 +79,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Jquery," />
+  <meta name="keywords" content="JavaScript," />
 
 
 
@@ -95,18 +95,18 @@
 
 
 
-<meta name="description" content="jQuery性能优化  将常用的方法封装成jQuery插件">
-<meta name="keywords" content="Jquery">
+<meta name="description" content="DOM一级　　DOM一级由两部分组成，一个是包含DOM Core模块，另一个是DOM HTML。其中DOM核心规定的是如何映射基于XML的文档结构，以便简化对文档中任意部分的访问和操作。DOM HTML模块则在DOM核心的基础上加以扩展，添加了针对HTML的对象和方法。 DOM二级　　DOM二级在DOM一级的基础上扩充了以下模块，实现了众多新类型和新接口：  DOM视图 DOM Views:定义了">
+<meta name="keywords" content="JavaScript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jQuery性能优化">
-<meta property="og:url" content="http://overfuns.cn/2017/09/07/jQuery性能优化/index.html">
+<meta property="og:title" content="DOM级别回顾">
+<meta property="og:url" content="http://overfuns.cn/2017/11/22/DOM级别回顾/index.html">
 <meta property="og:site_name" content="只是笔记">
-<meta property="og:description" content="jQuery性能优化  将常用的方法封装成jQuery插件">
+<meta property="og:description" content="DOM一级　　DOM一级由两部分组成，一个是包含DOM Core模块，另一个是DOM HTML。其中DOM核心规定的是如何映射基于XML的文档结构，以便简化对文档中任意部分的访问和操作。DOM HTML模块则在DOM核心的基础上加以扩展，添加了针对HTML的对象和方法。 DOM二级　　DOM二级在DOM一级的基础上扩充了以下模块，实现了众多新类型和新接口：  DOM视图 DOM Views:定义了">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-23T01:30:46.138Z">
+<meta property="og:updated_time" content="2017-12-01T06:19:50.991Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jQuery性能优化">
-<meta name="twitter:description" content="jQuery性能优化  将常用的方法封装成jQuery插件">
+<meta name="twitter:title" content="DOM级别回顾">
+<meta name="twitter:description" content="DOM一级　　DOM一级由两部分组成，一个是包含DOM Core模块，另一个是DOM HTML。其中DOM核心规定的是如何映射基于XML的文档结构，以便简化对文档中任意部分的访问和操作。DOM HTML模块则在DOM核心的基础上加以扩展，添加了针对HTML的对象和方法。 DOM二级　　DOM二级在DOM一级的基础上扩充了以下模块，实现了众多新类型和新接口：  DOM视图 DOM Views:定义了">
 
 
 
@@ -136,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://overfuns.cn/2017/09/07/jQuery性能优化/"/>
+  <link rel="canonical" href="http://overfuns.cn/2017/11/22/DOM级别回顾/"/>
 
 
 
 
 
-  <title>jQuery性能优化 | 只是笔记</title>
+  <title>DOM级别回顾 | 只是笔记</title>
   
 
 
@@ -323,7 +323,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://overfuns.cn/2017/09/07/jQuery性能优化/">
+    <link itemprop="mainEntityOfPage" href="http://overfuns.cn/2017/11/22/DOM级别回顾/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="yutong16">
@@ -340,7 +340,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">jQuery性能优化</h1>
+          <h1 class="post-title" itemprop="name headline">DOM级别回顾</h1>
         
 
         <div class="post-meta">
@@ -352,8 +352,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-07T14:35:07+08:00">
-                2017-09-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-22T10:34:51+08:00">
+                2017-11-22
               </time>
             
 
@@ -375,8 +375,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/性能优化/" itemprop="url" rel="index">
-                    <span itemprop="name">性能优化</span>
+                  <a href="/categories/技术博客/" itemprop="url" rel="index">
+                    <span itemprop="name">技术博客</span>
                   </a>
                 </span>
 
@@ -412,11 +412,15 @@
       
 
       
-        <h3 id="jQuery性能优化"><a href="#jQuery性能优化" class="headerlink" title="jQuery性能优化"></a>jQuery性能优化</h3><blockquote>
-<ol>
-<li>将常用的方法封装成jQuery插件 </li>
-</ol>
-</blockquote>
+        <h3 id="DOM一级"><a href="#DOM一级" class="headerlink" title="DOM一级"></a>DOM一级</h3><p>　　DOM一级由两部分组成，一个是包含DOM Core模块，另一个是DOM HTML。其中DOM核心规定的是如何映射基于XML的文档结构，以便简化对文档中任意部分的访问和操作。DOM HTML模块则在DOM核心的基础上加以扩展，添加了针对HTML的对象和方法。</p>
+<h3 id="DOM二级"><a href="#DOM二级" class="headerlink" title="DOM二级"></a>DOM二级</h3><p>　　DOM二级在DOM一级的基础上扩充了以下模块，实现了众多新类型和新接口：</p>
+<ul>
+<li>DOM视图 <code>DOM Views</code>:定义了跟踪不同文档的接口;</li>
+<li>DOM事件 <code>DOM Events</code>:定义了事件和事件处理的接口;</li>
+<li>DOM样式 <code>DOM Style</code>:定义了基于CSS为元素应用样式的接口;</li>
+<li>DOM遍历和范围 <code>DOM Traversal and Range</code>:定义了遍历和操作文档树的接口;  </li>
+</ul>
+<h3 id="DOM三级"><a href="#DOM三级" class="headerlink" title="DOM三级"></a>DOM三级</h3><p>　　DOM三级进一步扩展了DOM，引入以统一方式加载和保存文档的方法——在DOM加载和保存 <code>DOM Load and Save</code>模块中定义；新增了验证文档的方法——在DOM验证 <code>DOM Validation</code>模块中定义。DOM三级也对DOM Core 进行了扩展，开始支持XML1.0规范，涉及XML Infoset,XPath和XML Base。<br><strong><em>DOM 0级只是DOM历史上的一个参照点，实际上是不存在的，具体的来说的IE4.0和NN4.0早起的DHTML</em></strong>。</p>
 
       
     </div>
@@ -434,7 +438,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Jquery/" rel="tag"># Jquery</a>
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
           
         </div>
       
@@ -447,8 +451,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/07/27/angular2笔记/" rel="next" title="angular2学习笔记">
-                <i class="fa fa-chevron-left"></i> angular2学习笔记
+              <a href="/2017/11/20/利用Hexo-Github搭建个人博客/" rel="next" title="利用Hexo+Github搭建个人博客">
+                <i class="fa fa-chevron-left"></i> 利用Hexo+Github搭建个人博客
               </a>
             
           </div>
@@ -457,8 +461,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/09/08/如何在github-page博客上绑定域名/" rel="prev" title="如何在github page博客上绑定域名">
-                如何在github page博客上绑定域名 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/12/01/websocket说明/" rel="prev" title="websocket说明">
+                websocket说明 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -606,7 +610,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery性能优化"><span class="nav-number">1.</span> <span class="nav-text">jQuery性能优化</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#DOM一级"><span class="nav-number">1.</span> <span class="nav-text">DOM一级</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DOM二级"><span class="nav-number">2.</span> <span class="nav-text">DOM二级</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DOM三级"><span class="nav-number">3.</span> <span class="nav-text">DOM三级</span></a></li></ol></div>
             
 
           </div>

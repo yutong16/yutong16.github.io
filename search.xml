@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[websocket说明]]></title>
+    <url>%2F2017%2F12%2F01%2Fwebsocket%E8%AF%B4%E6%98%8E%2F</url>
+    <content type="text"><![CDATA[websocket使用说明 在一般的网络请求中，如HTTP协议，只能有前端发出请求后，后端根据协议的握手验证后，才能返回数据到前端。这样的数据传输方式，在有大量的HTTP请求时，会导致阻塞，例如在HTTP 1.1协议中，chrome就只能同事并发8条请求 。这个问题在HTTP 2.0中已解决 websocket是HTML5中一个可以在TCP连接上进行全双工通讯的协议。在WebSocket API中，只需要进行一个握手的操作后，浏览器和服务器之间就生成了一个专属的快速通道，两者之间可以互传数据。 WebSocket对象通过send()方法来向服务器发送数据，并通过onmessage事件来接受服务器返回的数据。 一般通过下面new WebSocket()的方式创建WebSocket对象： var Socket = new WebSocket( url, [protocol] ); 其中可以传两个参数，url是必传的参数，代表服务器的指定地址，protocol是可选参数，表示可接受的协议名。 WebSocket对象拥有的属性如下： Socket.readyState : 拥有4中连接状态，0-表示连接尚未建立；1-表示连接已建立，可以进行通信；2-表示连接正在关闭；3-表示连接已经关闭或者连接不能打开。 Socket.bufferedAmount : 只读属性bufferedAmount已被send()放入正在队列中等待传输，但是还没有发出UTF-8文本字节数。 WebSocket对象的事件如下： open: 事件处理程序-Socket.onopen,在连接时触发； message: 事件处理程序-Socket.onmessage,客户端接受服务器数据时触发； error: 事件处理程序-Socket.onerror,通信发生错误时触发 close: 事件处理程序-Socket.onclose,连接关闭时触发 WebSocket方法如下： WebSocket.send():使用连接发送数据； WebSocket.close():关闭连接； 为了建立一个WebSocket连接，客户端浏览器首先要向服务器发起一个HTTP请求，这个请求和通常的HTTP请求不同，包含了一些附加头信息，其中附加头信息Upgrade:WebSocket表明这是一个申请协议升级的HTTP请求，服务器端解析这些附加的头信息然后产生应答信息返回给客户端，客户端和服务器之间的WebSocket连接就建立起来了，双方可以互相传数据，并且这个连接持续到知道客户端或服务器的某一方主动关闭连接。]]></content>
+      <categories>
+        <category>技术博客</category>
+      </categories>
+      <tags>
+        <tag>传输协议</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[DOM级别回顾]]></title>
+    <url>%2F2017%2F11%2F22%2FDOM%E7%BA%A7%E5%88%AB%E5%9B%9E%E9%A1%BE%2F</url>
+    <content type="text"><![CDATA[DOM一级 DOM一级由两部分组成，一个是包含DOM Core模块，另一个是DOM HTML。其中DOM核心规定的是如何映射基于XML的文档结构，以便简化对文档中任意部分的访问和操作。DOM HTML模块则在DOM核心的基础上加以扩展，添加了针对HTML的对象和方法。 DOM二级 DOM二级在DOM一级的基础上扩充了以下模块，实现了众多新类型和新接口： DOM视图 DOM Views:定义了跟踪不同文档的接口; DOM事件 DOM Events:定义了事件和事件处理的接口; DOM样式 DOM Style:定义了基于CSS为元素应用样式的接口; DOM遍历和范围 DOM Traversal and Range:定义了遍历和操作文档树的接口; DOM三级 DOM三级进一步扩展了DOM，引入以统一方式加载和保存文档的方法——在DOM加载和保存 DOM Load and Save模块中定义；新增了验证文档的方法——在DOM验证 DOM Validation模块中定义。DOM三级也对DOM Core 进行了扩展，开始支持XML1.0规范，涉及XML Infoset,XPath和XML Base。DOM 0级只是DOM历史上的一个参照点，实际上是不存在的，具体的来说的IE4.0和NN4.0早起的DHTML。]]></content>
+      <categories>
+        <category>技术博客</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[利用Hexo+Github搭建个人博客]]></title>
     <url>%2F2017%2F11%2F20%2F%E5%88%A9%E7%94%A8Hexo-Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%2F</url>
     <content type="text"><![CDATA[利用Hexo+Github搭建个人博客 在这个百家争鸣的开放时代下，每个人都在各自的领域发光发热，作为一个每天早起晚归的板砖工，有一个记录自己板砖历程的记事本 技术博客 也是进入高级包工头的必备条件。所以在这里进行一下回顾一下博客搭建的过程。 本次搭建博客需要以下各类资源：一个github账户，还有~好心情!!! 下面进行搭建过程： 1.安装本地环境 nodeJS 在官网下载nodeJS对应的安装包后，点击按装包以管理员身份运行无脑下一步即可，安装完成后使用cmd命令打开控制台，输入node -v查看是否正确安装node服务，输入npm -v，查看是否已正确安装npm包管理器。本人成功截图如下：本人安装版本较早，现版本号可能会有所不同，但是没有影响。若出现其他情况，请重新安装nodeJS,或查阅相关资料进行处理。2.安装Hexo 和Git 运行npm install hexo -g,在全局模式下安装hexo模块（默认最新版本），安装成功后运行hexo，cli中回下hexo相关指令,如下,更多hexo相关信息请访问Hexo API。我们运行hexo init &lt;your blog&#39;s name&gt;初始化一个Hexo框架的简易博客，这样一个简易博客就搭建完成了。接下来进入博客文件夹，运行hexo s，框架部署成功后，如下：,在本地浏览器中输入http://localhost:4000即可访问到本地部署的博客。 然后登录Git官网，下载Git安装包，进行安装。3.将Hexo博客发布到github上 上面成功后，我们登录github，并创建一个仓库,仓库名必须未your_name.github.io格式。这个github page的固定写法。 建立完成后，拷贝仓库的连接,打开本地博客文件目录，编辑博客配置文件_config.yml,,将配置文件的deploy属性改为如下，注意:后面有一个空格。完成后，我们关联了github,但是还的需要hexo中相应的模块将代码发布到github上，所以接着运行npm install hexo-deployer-git --save，安装完成后。设置连接github的账户，邮箱。。接下来运行hexo d -g，也可以先运行hexo g，再运行hexo d。该命令含义是先生成静态文件，再发布到github上。在发布过程中，github会验证ssh密码，如果已经设置改密码，则会自动跳过。设置连接github SHH教程 发布成功后,即可访问该web站。4.修改Hexo主题 Hexo最大的优势莫过于拥有丰富的主题风格，以及强大的社区论坛。在主题这块，个人比较倾向于Next主题风格，还有其他很多好看的主题。 这里我们进行一下主题的修改设置： 1. 确定主题，运行npm install --save &lt;主题名称&gt;; 2. 修改博客配置文件_config.yml中的theme属性，设置为主题名称; 3. 运行hexo d -g，查看线上页面;5.Hexo相关常用命令 1. 新建分类，hexo new page &#39;名称&#39;; 2. 新建博客，hexo new &#39;名称&#39;; 更多命令请学习hexo官方文档!]]></content>
