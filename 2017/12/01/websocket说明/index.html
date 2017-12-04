@@ -95,18 +95,18 @@
 
 
 
-<meta name="description" content="websocket使用说明　　在一般的网络请求中，如HTTP协议，只能有前端发出请求后，后端根据协议的握手验证后，才能返回数据到前端。这样的数据传输方式，在有大量的HTTP请求时，会导致阻塞，例如在HTTP 1.1协议中，chrome就只能同事并发8条请求 。这个问题在HTTP 2.0中已解决　　websocket是HTML5中一个可以在TCP连接上进行全双工通讯的协议。在WebSocket AP">
+<meta name="description" content="websocket使用说明　　在一般的网络请求中，如HTTP协议，只能有前端发出请求后，后端根据协议的握手验证后，才能返回数据到前端。这样的数据传输方式，在有大量的HTTP请求时，会导致阻塞，例如在HTTP 1.1协议中，chrome就只能同时并发8条请求 。这个问题在HTTP 2.0中已解决　　websocket是HTML5中一个可以在TCP连接上进行全双工通讯的协议。在WebSocket AP">
 <meta name="keywords" content="传输协议">
 <meta property="og:type" content="article">
 <meta property="og:title" content="websocket说明">
 <meta property="og:url" content="http://overfuns.cn/2017/12/01/websocket说明/index.html">
 <meta property="og:site_name" content="只是笔记">
-<meta property="og:description" content="websocket使用说明　　在一般的网络请求中，如HTTP协议，只能有前端发出请求后，后端根据协议的握手验证后，才能返回数据到前端。这样的数据传输方式，在有大量的HTTP请求时，会导致阻塞，例如在HTTP 1.1协议中，chrome就只能同事并发8条请求 。这个问题在HTTP 2.0中已解决　　websocket是HTML5中一个可以在TCP连接上进行全双工通讯的协议。在WebSocket AP">
+<meta property="og:description" content="websocket使用说明　　在一般的网络请求中，如HTTP协议，只能有前端发出请求后，后端根据协议的握手验证后，才能返回数据到前端。这样的数据传输方式，在有大量的HTTP请求时，会导致阻塞，例如在HTTP 1.1协议中，chrome就只能同时并发8条请求 。这个问题在HTTP 2.0中已解决　　websocket是HTML5中一个可以在TCP连接上进行全双工通讯的协议。在WebSocket AP">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-01T08:00:41.121Z">
+<meta property="og:updated_time" content="2017-12-04T01:41:56.179Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="websocket说明">
-<meta name="twitter:description" content="websocket使用说明　　在一般的网络请求中，如HTTP协议，只能有前端发出请求后，后端根据协议的握手验证后，才能返回数据到前端。这样的数据传输方式，在有大量的HTTP请求时，会导致阻塞，例如在HTTP 1.1协议中，chrome就只能同事并发8条请求 。这个问题在HTTP 2.0中已解决　　websocket是HTML5中一个可以在TCP连接上进行全双工通讯的协议。在WebSocket AP">
+<meta name="twitter:description" content="websocket使用说明　　在一般的网络请求中，如HTTP协议，只能有前端发出请求后，后端根据协议的握手验证后，才能返回数据到前端。这样的数据传输方式，在有大量的HTTP请求时，会导致阻塞，例如在HTTP 1.1协议中，chrome就只能同时并发8条请求 。这个问题在HTTP 2.0中已解决　　websocket是HTML5中一个可以在TCP连接上进行全双工通讯的协议。在WebSocket AP">
 
 
 
@@ -412,7 +412,7 @@
       
 
       
-        <h3 id="websocket使用说明"><a href="#websocket使用说明" class="headerlink" title="websocket使用说明"></a>websocket使用说明</h3><p>　　在一般的网络请求中，如HTTP协议，只能有前端发出请求后，后端根据协议的握手验证后，才能返回数据到前端。这样的数据传输方式，在有大量的HTTP请求时，会导致阻塞，例如在HTTP 1.1协议中，chrome就只能同事并发8条请求 。<strong>这个问题在HTTP 2.0中已解决</strong><br>　　websocket是HTML5中一个可以在TCP连接上进行全双工通讯的协议。在WebSocket API中，只需要进行一个握手的操作后，浏览器和服务器之间就生成了一个专属的快速通道，两者之间可以互传数据。<br>　　WebSocket对象通过<code>send()</code>方法来向服务器发送数据，并通过<code>onmessage</code>事件来接受服务器返回的数据。<br>　　一般通过下面<code>new WebSocket()</code>的方式创建WebSocket对象：</p>
+        <h3 id="websocket使用说明"><a href="#websocket使用说明" class="headerlink" title="websocket使用说明"></a>websocket使用说明</h3><p>　　在一般的网络请求中，如HTTP协议，只能有前端发出请求后，后端根据协议的握手验证后，才能返回数据到前端。这样的数据传输方式，在有大量的HTTP请求时，会导致阻塞，例如在HTTP 1.1协议中，chrome就只能同时并发8条请求 。<strong>这个问题在HTTP 2.0中已解决</strong><br>　　websocket是HTML5中一个可以在TCP连接上进行全双工通讯的协议。在WebSocket API中，只需要进行一个握手的操作后，浏览器和服务器之间就生成了一个专属的快速通道，两者之间可以互传数据。<br>　　WebSocket对象通过<code>send()</code>方法来向服务器发送数据，并通过<code>onmessage</code>事件来接受服务器返回的数据。<br>　　一般通过下面<code>new WebSocket()</code>的方式创建WebSocket对象：</p>
 <blockquote>
 <p><code>var Socket = new WebSocket( url, [protocol] );</code>  </p>
 </blockquote>
@@ -474,6 +474,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/12/04/web前后端数据通信/" rel="prev" title="web前后端数据通信">
+                web前后端数据通信 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -549,7 +553,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -571,7 +575,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
