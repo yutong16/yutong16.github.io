@@ -103,7 +103,7 @@
 <meta property="og:site_name" content="只是笔记">
 <meta property="og:description" content="除了Object之外，在ECMAScript中最常用的就是Array类型。这种Array类型相比其他语言不同的是，数组中的每一项都可以保存任何类型的数据，比如第一项保存数值，第二项保存字符串，第三项保存对象等等。而且数组的长度大小是可以动态调整的，随着数据项的增加自动增长。　　创建数组的基本方式有两种，一是使用Array构造函数，如下：var test = new Array();其中Arra">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-18T05:37:59.397Z">
+<meta property="og:updated_time" content="2017-12-19T01:45:00.552Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS中的Array类型">
 <meta name="twitter:description" content="除了Object之外，在ECMAScript中最常用的就是Array类型。这种Array类型相比其他语言不同的是，数组中的每一项都可以保存任何类型的数据，比如第一项保存数值，第二项保存字符串，第三项保存对象等等。而且数组的长度大小是可以动态调整的，随着数据项的增加自动增长。　　创建数组的基本方式有两种，一是使用Array构造函数，如下：var test = new Array();其中Arra">
@@ -417,8 +417,14 @@
 <p>这个比较函数可以适用大多数数据类型，只要将其作为参数传递给sort()方法即可。如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var values=[0,15,3,56,4];</div><div class="line">values.sort(compare);</div><div class="line">alert(value);       //0,3,4,15,56</div></pre></td></tr></table></figure></p>
 <p>也可以通过比较函数产生降序的结果，只需要交换比较函数返回的值即可。<br><strong><em>reserve()和sort()方法的返回值是经过排序之后的数组。</em></strong><br>5.<strong>操作方法</strong><br>　　concat()方法，可以将接受到的参数添加到这个副本的末尾，最后返回新构建的数组。该方法会先创建一个当前数组的一个副本。如果concat()没有参数，则返回一个当前数组的副本。<br>　　slice()方法，基于当前数组中的一或多个项创建一个新数组。接收一或两个参数，即要返回项的起始或结束位置。只有一个参数的情况下，则返回从起始到当前数组末尾的所有项。如果两个参数，则返回从起始开始到结束位置之间的项，但不包括结束位置的项。slice()不会影响原来数组。<br>　　splice()方法，主要用途是向数组中插入项：  </p>
 <blockquote>
-<p><strong>删除</strong>：可以删除任意数量的项，只需指定2个参数：要删除的第一项的位置和要删除的项数，例如splice(0,2)会删除数组中的前两项；<br><strong>插入</strong>：可以向指定位置插入任意数量的项，提供3个参数：起始位置，0（要删除的项），要插入的项；<br><strong>替换</strong>：可以向指定位置插入任意数量的项，且同时删除任意数量的项，提供3个参数：起始位置，要删除的项数和要插入的任意数量的项。<br>　　splice()方法始终返回一个数组，该数组中包含从原始数组中删除的项（若没有删除任何项，则返回一个空数组）。<br>6.<strong>位置方法</strong><br>　　indexOf()和lastIndexOf(),都接受两个参数：要查找的项和（可选）查找起点位置的索引。indexOf()从前往后查找，lastIndexOf()从后往前查找。<br>7.<strong>迭代方法</strong>  </p>
+<p><strong>删除</strong>：可以删除任意数量的项，只需指定2个参数：要删除的第一项的位置和要删除的项数，例如splice(0,2)会删除数组中的前两项；<br><strong>插入</strong>：可以向指定位置插入任意数量的项，提供3个参数：起始位置，0（要删除的项），要插入的项；<br><strong>替换</strong>：可以向指定位置插入任意数量的项，且同时删除任意数量的项，提供3个参数：起始位置，要删除的项数和要插入的任意数量的项。<br>　　splice()方法始终返回一个数组，该数组中包含从原始数组中删除的项（若没有删除任何项，则返回一个空数组）。  </p>
 </blockquote>
+<p>6.<strong>位置方法</strong><br>　　indexOf()和lastIndexOf(),都接受两个参数：要查找的项和（可选）查找起点位置的索引。indexOf()从前往后查找，lastIndexOf()从后往前查找。<br>7.<strong>迭代方法</strong><br>　　ECMAScript5为数组定义了5个迭代方法。每个方法都接收两个参数：要在每一项上运行的函数和（可选）运行该函数的作用域对象—影响this的值。传入这些方法中的函数会接收三个参数：数组项的值，该项在数组中的位置和数组对象本身。</p>
+<blockquote>
+<p><strong>every()</strong>: 对数组中的每一项运行给定函数，如果该函数的每一项都返回true，则返回true;<br><strong>filter()</strong>: 对数组中的每一项运行给定函数，返回该函数会返回true的项组成的数组;<br><strong>forEach()</strong>: 对数组中的每一项运行给定的函数。这个方法没有返回值;<br><strong>map()</strong>: 对数组中的每一项运行给定函数，返回每次函数调用的结果组成的数组;<br><strong>some()</strong>: 对数组中的每一项运行给定函数，如果该函数对任一项返回true,则返回true。  </p>
+</blockquote>
+<p><strong><strong>以上方法都不会修改数组中的包含的值</strong></strong><br>8.<strong>归并方法</strong><br>　　reduce()和reduceRight()。都会迭代数组的所有项，然后构建一个最终返回的值。其中reduce()方法从数组的第一项开始，逐个遍历到最后。而reduceRight()则从数组的最后一项开始，遍历到第一项。<br>　　这两个方法都接收两个参数：一个在每一项上调用的函数和（可选）作为归并基础的初始值。传给reduce()和reduceRight()的函数接收4个参数：前一个值，当前值，项的索引和数组对象。<em>*</em>这个函数返回的任何值都会作为第一个参数自动传给下一项。第一次迭代发生在数组的第二项上，因此第一个参数是数组的第一项，第二个参数就是数组的第二项。如下，利用reduce()方法归并求和：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var value = [1,2,3,4,5];</div><div class="line">var sum = value.reduce(function(pre, cur, index, array)&#123;</div><div class="line">    return prev + cur;</div><div class="line">&#125;);</div><div class="line">alert(sum);             //15</div></pre></td></tr></table></figure></p>
+<p>　　以上是JS数组拥有的基本信息，部分摘抄自《JavaScript高级程序设计3》，供以后复习。</p>
 
       
     </div>
