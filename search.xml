@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[用户行为分析之前端]]></title>
     <url>%2F2017%2F12%2F12%2F%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90%E4%B9%8B%E5%89%8D%E7%AB%AF%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[在最近的工作中由于项目需要进行用户行为分析，在参考了几位网上博客的资料后，整理一下自己的看法。]]></content>
       <categories>
         <category>个人博客</category>
       </categories>
@@ -97,6 +97,17 @@
       </categories>
       <tags>
         <tag>Angular2.0</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JS中的Function类型]]></title>
+    <url>%2F2016%2F01%2F19%2FJS%E4%B8%AD%E7%9A%84Function%E7%B1%BB%E5%9E%8B%2F</url>
+    <content type="text"><![CDATA[JS中每个函数都是Function类型的实例，而且都与其他引用类型一样具有属性和方法。并且函数都是对象，因此函数名实际上也是一个指向函数对象的指针，不会与某个函数绑定。]]></content>
+      <categories>
+        <category>个人博客</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
